@@ -1,0 +1,342 @@
+{
+  "case1": {
+    "id": "01",
+    "campaigns": [
+      "1001",
+      "1002",
+      "1003"
+    ],
+    "odid": "0100d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545801",
+      "adUnitId": "default_2545801",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "case2": {
+    "id": "02",
+    "campaigns": [
+      "2001",
+      "2002",
+      "2003"
+    ],
+    "odid": "0200d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545802",
+      "adUnitId": "default_2545802",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "case3": {
+    "id": "03",
+    "campaigns": [
+      "3001",
+      "3002",
+      "3003"
+    ],
+    "odid": "0300d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545803",
+      "adUnitId": "default_2545803",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "case4": {
+    "id": "04",
+    "campaigns": [
+      "4001",
+      "4002",
+      "4003"
+    ],
+    "odid": "0400d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545804",
+      "adUnitId": "default_2545804",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "case5": {
+    "id": "05",
+    "campaigns": [
+      "5001",
+      "5002",
+      "5003"
+    ],
+    "odid": "0500d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545805",
+      "adUnitId": "default_2545805",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "case6": {
+    "id": "06",
+    "campaigns": [
+      "6001",
+      "6002",
+      "6003"
+    ],
+    "odid": "0600d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545806",
+      "adUnitId": "default_2545806",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "case7": {
+    "id": "07",
+    "campaigns": [
+      "7001",
+      "7002"
+    ],
+    "odid": "0700d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545807",
+      "adUnitId": "default_2545807",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "case8": {
+    "id": "08",
+    "campaigns": [
+      "8001",
+      "8002"
+    ],
+    "odid": "0800d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545808",
+      "adUnitId": "default_2545808",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "case9": {
+    "id": "09",
+    "campaigns": [
+      "9001",
+      "9002"
+    ],
+    "odid": "0900d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545809",
+      "adUnitId": "default_2545809",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "case10": {
+    "id": "10",
+    "campaigns": [
+      "10001"
+    ],
+    "odid": "1000d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545810",
+      "adUnitId": "default_2545810",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "caseEula1": {
+    "id": "eula1",
+    "campaigns": [
+      "31900",
+      "31899",
+      "31898",
+      "31897",
+      "31896",
+      "31895",
+      "31894",
+      "31893"
+    ],
+    "odid": "b100d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545891",
+      "adUnitId": "default_2545891",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "caseEula2": {
+    "id": "eula2",
+    "campaigns": [
+      "31900",
+      "31899",
+      "31898",
+      "31897",
+      "31896",
+      "31895",
+      "31894",
+      "31893"
+    ],
+    "odid": "b200d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545892",
+      "adUnitId": "default_2545892",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "caseEula3": {
+    "id": "eula3",
+    "campaigns": [
+      "31900",
+      "31899",
+      "31898",
+      "31897",
+      "31896",
+      "31895",
+      "31894",
+      "433",
+      "31893"
+    ],
+    "odid": "b300d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545893",
+      "adUnitId": "default_2545893",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "caseEula4": {
+    "id": "eula4",
+    "campaigns": [
+      "31900",
+      "31899",
+      "31898",
+      "31897",
+      "31896",
+      "31895",
+      "31894",
+      "31893"
+    ],
+    "odid": "aa00d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545894",
+      "adUnitId": "default_2545894",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "caseEula5": {
+    "id": "eula5",
+    "campaigns": [
+      "433",
+      "31900",
+      "31899",
+      "31898",
+      "31897",
+      "31896",
+      "31895",
+      "31894",
+      "31893"
+    ],
+    "odid": "6a00d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545894",
+      "adUnitId": "default_2545894",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  },
+  "caseEula6": {
+    "id": "eula6",
+    "campaigns": [
+      "433"
+    ],
+    "odid": "aa00d490-138d-40f2-a5b1-465f4a79eb68",
+    "context": {
+      "apiKey": "2545894",
+      "adUnitId": "default_2545894",
+      "sdkVersion": "2.1.1",
+      "osVersion": "7.0.1",
+      "country": "FR",
+      "city": "Paris",
+      "isp": "Orange",
+      "mobile": "GalaxyS7",
+      "connectivity": "WIFI"
+    }
+  }
+}
