@@ -72,6 +72,7 @@ module.exports = class EventsAggregationController extends Abstract {
 				<style>
 					body {
 						background-color: linen;
+						padding-bottom: 100px;
 					}
 
 					h1 {
