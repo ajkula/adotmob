@@ -1,14 +1,14 @@
-let AbstractController = require('./Abstract')
+let AbstractController = require('./Abstract');
 
 module.exports = class HealthController extends AbstractController {
 
   constructor(container) {
-    super(container)
+    super(container);
 
     this.container = container;
     this.healthCheck = this.get('healthCheck');
     // Load routes
-    this.router.get('/health', this.checkHealth.bind(this))
+    this.router.get('/health', this.checkHealth.bind(this));
   }
 
   /**
@@ -18,6 +18,6 @@ module.exports = class HealthController extends AbstractController {
    */
   async checkHealth(req, res) {
     // const status = await this.anyModel // some async call
-    res.json({status: this.healthCheck})
+    res.json({status: this.healthCheck});
   }
 }

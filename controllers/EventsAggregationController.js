@@ -59,14 +59,6 @@ module.exports = class EventsAggregationController extends Abstract {
 			return callback();
 		}
 
-		replacer(string) {
-			return string
-				.replace('{', '{<br />')
-				.replace('[', '{<br />')
-				.replace('},', '<br />},<br />')
-				.replace(']', '<br />]');
-		}
-
     help(req, res) {
 			res.end(`<html>
 				<style>

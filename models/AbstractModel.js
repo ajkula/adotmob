@@ -1,6 +1,6 @@
 let uuid = require('node-uuid');
-const Promise = require('bluebird')
-const logule = require('logule')
+const Promise = require('bluebird');
+const logule = require('logule');
 
 module.exports = class AbstractModel {
   /**
@@ -8,7 +8,7 @@ module.exports = class AbstractModel {
    * @param connector
    */
   constructor (connector) {
-    this.connector = connector
+    this.connector = connector;
   }
 
   /**
@@ -17,7 +17,7 @@ module.exports = class AbstractModel {
    * @return {Promise.<Map>}
    */
   findById (id) {
-    return this.connector.get(id)
+    return this.connector.get(id);
   }
 
   /**
