@@ -136,7 +136,10 @@ module.exports = class EventsAggregationController extends Abstract {
 								clicks: 7316
 							}
 						};
-						var healthy = {status: ${JSON.stringify(this.healthy)}};
+						var healthy = {status: {
+							"CSV_READY": true,
+							"hasEvents": true
+						}};
 						document.getElementById("json").innerHTML = JSON.stringify(exemple, null, 2);
 						document.getElementById("res").innerHTML = JSON.stringify(returnExemple, null, 2);
 						document.getElementById("healthy").innerHTML = JSON.stringify(healthy, null, 2);
