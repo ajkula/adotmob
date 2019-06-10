@@ -33,7 +33,7 @@ module.exports = class Server {
       /**
       * Will be used to mock health routes' dependencies
       */
-      const CSV_EXISTS = {CSV_READY: fs.existsSync('./csv/events.csv'), hasEvents: events.length > 0};
+      const CSV_EXISTS = {isReady: fs.existsSync('./csv/events.csv'), hasEvents: events.length > 0};
 
       /**
        * Adding the healthCheck datas to container
