@@ -104,7 +104,7 @@ module.exports = class EventsAggregationController extends Abstract {
 					<pre id="res"></pre>
 					
 					<h1>Use the GET '/health' route to get <i>service health status</i> </h1>
-					<p>The request object should be:</p>
+					<p>The response object should be:</p>
 					<pre id="healthy"></pre>
 					<script>
 						var exemple = {body: {poi: [  
