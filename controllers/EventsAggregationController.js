@@ -1,6 +1,5 @@
 const Abstract = require('./Abstract');
 const logule = require('logule').init(module);
-const fs = require('fs');
 const EventsQueue = require('../connectors/EventsQueue');
 
 module.exports = class EventsAggregationController extends Abstract {
@@ -22,7 +21,7 @@ module.exports = class EventsAggregationController extends Abstract {
 			this.result = {};
 			this.poi = [];
 			this.queue = new EventsQueue(this.eachEvent.bind(this));
-			const { body, headers } = req;
+			const { body, } = req;
 			if (!body || !body.poi)  {
 					logule.error(`400 Bad Request: body.poi is undefined`);
 					res.json({status: 400, message: `Bad Request`});
@@ -55,12 +54,12 @@ module.exports = class EventsAggregationController extends Abstract {
 		eachEvent(event, callback) {
 			let distancesFromEventArray = this.poi.map(point => this.distance(event, point));
 			let current = this.poi[distancesFromEventArray.indexOf(Math.min(...distancesFromEventArray))];
-			if (!(current || {}).name) console.log({
+			if (!(current || {}).name) logule.warn({
 				current,
 				i: distancesFromEventArray.indexOf(Math.min(...distancesFromEventArray)),
 				dist_min: Math.min(...distancesFromEventArray),
 				event
-				})
+				});
 			if ((this.result[current.name] || {})[this.EVENTS_ATTRIBUTES_MAPPING[event.event_type]]) {
 				this.result[current.name][this.EVENTS_ATTRIBUTES_MAPPING[event.event_type]] += 1
 			} else {
