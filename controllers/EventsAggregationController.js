@@ -18,33 +18,47 @@ module.exports = class EventsAggregationController extends Abstract {
     }
 
     link(req, res) {
-			this.result = {};
-			this.poi = [];
-			this.queue = new EventsQueue(this.eachEvent.bind(this));
-			const { body, } = req;
-			if (!body || !body.poi)  {
-					logule.error(`400 Bad Request: body.poi is undefined`);
-					res.json({status: 400, message: `Bad Request`});
-			}
-
-			this.poi = body.poi;
-
-			this.queue.push(this.events);
-			this.queue.setDrain(err => {
-				if (err) {
-					logule.error(result);
-					res.json({status: 500, message: err});
-				}
-				res.json(this.result);
-			})
+		console.time("Request bench")
+		this.result = {};
+		this.poi = [];
+		this.queue = new EventsQueue(this.eachEvent.bind(this));
+		const { body, headers } = req;
+		if (headers['content-type'] !== 'application/json') {
+			let message = `400 Bad Request: headers content-type: ${headers['content-type']}, expected: application/json`;
+			logule.error(message);
+			console.timeEnd("Request bench")
+			logule.info(body);
+			return res.json({status: 400, message});
+		}
+		if (!body || !body.poi)  {
+			let message = `400 Bad Request: body.poi is undefined`;
+			logule.error(message);
+			console.timeEnd("Request bench")
+			logule.info(body);
+			return res.json({status: 400, message});
 		}
 		
-
+		this.poi = body.poi;
+		this.queue.push(this.events);
+		this.queue.setDrain(err => {
+			if (err) {
+				logule.error(result);
+				console.timeEnd("Request bench")
+				logule.info(body);
+				return res.json({status: 500, message: err});
+			}
+			logule.info(body);
+			console.timeEnd("Request bench")
+			return res.json(this.result);
+		});
+	}
+	
+	
 		distance(source, compare) {
 			let lat1 = source.lat, lon1 = source.lon, lat2 = compare.lat, lon2 = compare.lon;
-			var p = 0.017453292519943295;    // Math.PI / 180
-			var c = Math.cos;
-			var a = 0.5 - c((lat2 - lat1) * p)/2 + 
+			const p = 0.017453292519943295;    // Math.PI / 180
+			const c = Math.cos;
+			let a = 0.5 - c((lat2 - lat1) * p)/2 + 
 							c(lat1 * p) * c(lat2 * p) * 
 							(1 - c((lon2 - lon1) * p))/2;
 		
