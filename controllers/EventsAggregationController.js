@@ -25,15 +25,13 @@ module.exports = class EventsAggregationController extends Abstract {
 		if (headers['content-type'] !== 'application/json') {
 			let message = `400 Bad Request: headers content-type: ${headers['content-type']}, expected: application/json`;
 			logule.error(message);
-			console.timeEnd("Request bench")
-			logule.info(body);
+			console.timeEnd("Request bench");
 			return res.json({status: 400, message});
 		}
 		if (!body || !body.poi)  {
 			let message = `400 Bad Request: body.poi is undefined`;
 			logule.error(message);
-			console.timeEnd("Request bench")
-			logule.info(body);
+			console.timeEnd("Request bench");
 			return res.json({status: 400, message});
 		}
 		
@@ -42,12 +40,10 @@ module.exports = class EventsAggregationController extends Abstract {
 		this.queue.setDrain(err => {
 			if (err) {
 				logule.error(result);
-				console.timeEnd("Request bench")
-				logule.info(body);
+				console.timeEnd("Request bench");
 				return res.json({status: 500, message: err});
 			}
-			logule.info(body);
-			console.timeEnd("Request bench")
+			console.timeEnd("Request bench");
 			return res.json(this.result);
 		});
 	}
